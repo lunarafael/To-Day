@@ -1,4 +1,4 @@
-package com.example.today;
+package com.example.today.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.example.today.Model.Task;
+import com.example.today.R;
 
 import java.util.List;
 
@@ -29,7 +32,7 @@ public class TaskAdapter extends ArrayAdapter<Task> {
         TextView taskDesc = convertView.findViewById(R.id.taskDescriptionTextView);
         // Configure as informações do item de tarefa com base nos dados da tarefa
         taskName.setText(task.getNome());
-        taskDesc.setText(task.getDesc());
+        taskDesc.setText(task.getDescricao());
         return convertView;
     }
 }

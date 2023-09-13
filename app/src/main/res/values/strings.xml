@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ToDay</string>
+    <string-array name="category_options">
+        <item>Outros</item>
+        <item>Casa</item>
+        <item>Exercício</item>
+        <item>Escola</item>
+    </string-array>
 </resources>
